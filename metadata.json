@@ -1,0 +1,5 @@
+{
+  "name": "Portfolio Showcase <<Max-Dev>>",
+  "description": "A single-page application for showcasing portfolios, with user and portfolio management functionalities, all powered by local storage.",
+  "requestFramePermissions": []
+}

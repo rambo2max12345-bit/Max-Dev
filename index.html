@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Kanit', 'sans-serif'],
+            },
+            colors: {
+              primary: '#26A69A',
+              'primary-light': '#80CBC4',
+              'primary-darkest': '#004D40',
+              secondary: '#AED581',
+              warning: '#FFCA28',
+              accent: '#FF8A65',
+              danger: '#EF5350',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .toast-enter {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      .toast-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 300ms, transform 300ms;
+      }
+      .toast-exit {
+        opacity: 1;
+      }
+      .toast-exit-active {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 300ms, transform 300ms;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <div id="toast-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
